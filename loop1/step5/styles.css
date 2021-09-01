@@ -1,0 +1,79 @@
+:root {
+  --grey: #b4b5b5;
+  --blue: #3a8acf;
+  --dash: #d3e6f4;
+}
+html,
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+}
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url("img/background.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 85vh;
+}
+.container {
+  width: 25rem;
+  height: auto;
+  margin: 7rem auto 0;
+  background: white;
+  padding: 1rem 2.5rem 1.7rem;
+  border-radius: 5px;
+}
+.name {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.dash {
+  width: 1.7rem;
+  height: 0.35rem;
+  background: var(--dash);
+  margin-bottom: 0.3rem;
+}
+h1 {
+  font-size: 3.1rem;
+  font-weight: 900;
+  color: var(--blue);
+  margin-bottom: 0px;
+}
+.city {
+  margin: 0 0 2.5rem;
+  color: var(--grey);
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+#ams {
+  text-align: end;
+}
+.top-info {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+h5 {
+  color: var(--grey);
+  margin-bottom: 0px;
+  font-size: 0.75rem;
+}
+.top-p {
+  margin-top: 0px;
+}
+.bottom-info {
+  display: flex;
+  justify-content: space-between;
+  margin-top: -0.75rem;
+}
+img {
+  width: 9.4rem;
+}
+.bottom-p {
+  margin-top: 3px;
+}
