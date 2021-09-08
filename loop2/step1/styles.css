@@ -1,0 +1,127 @@
+:root {
+  --bg: #d87f7d;
+  --light-pink: #e9afb2;
+  --arrow: #7a4849;
+  --first-black: #373435;
+  --second-black: #2f2c2d;
+  --third-black: #1f1b1d;
+  --hover-pink: #f2cacb;
+}
+html,
+body {
+  margin: 0;
+  padding: 0;
+  background-color: var(--bg);
+  font-family: "roboto", sans-serif;
+  padding-left: 6rem;
+  overflow-x: hidden;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+h1 {
+  padding-top: 3rem;
+  padding-left: 3.8rem;
+  font-size: 4rem;
+  position: relative;
+  color: var(--light-pink);
+  margin-bottom: 0;
+}
+.synthetic {
+  color: white;
+  margin-left: 3rem;
+}
+.line {
+  margin-left: 4rem;
+  position: absolute;
+}
+.line:hover {
+  color: var(--hover-pink);
+  cursor: pointer;
+}
+.span {
+  margin-left: 3rem;
+}
+.span:hover {
+  color: var(--hover-pink);
+  cursor: pointer;
+}
+.first-h1 {
+  padding-left: 0;
+}
+p {
+  padding-left: 6.8rem;
+  color: white;
+  font-size: 1.1rem;
+  margin: 1rem 0 4rem 0;
+}
+.container {
+  width: 20rem;
+  height: 20rem;
+  background-color: black;
+}
+.one {
+  background-color: var(--first-black);
+}
+.two {
+  background-color: var(--second-black);
+}
+.three {
+  background-color: var(--third-black);
+}
+.wrapper {
+  display: grid;
+  grid-template-columns: 20rem 20rem 20rem;
+  position: relative;
+}
+.arrow {
+  width: 7rem;
+  height: 7rem;
+  background-color: var(--light-pink);
+  display: flex;
+  justify-content: center;
+}
+.arrow:hover {
+  background-color: var(--hover-pink);
+  cursor: pointer;
+}
+
+input {
+  background-color: black;
+  color: white;
+  width: 17rem;
+  height: 4rem;
+  position: absolute;
+  left: 20.5rem;
+  bottom: 6.4rem;
+  border: none;
+  border-radius: 5px;
+  font-size: 1.2rem;
+}
+input:hover {
+  margin-bottom: 0.3rem;
+  cursor: pointer;
+  transition: 0.3s linear;
+}
+input:focus {
+  outline: none;
+}
+.content {
+  display: grid;
+  grid-template-columns: auto 1fr 1fr;
+}
+img {
+  width: 2rem;
+}
+h3 {
+  color: #c78582;
+  font-size: 1.4rem;
+  margin: 8rem 0 0 4rem;
+}
+h2 {
+  color: white;
+  font-size: 2rem;
+  margin: 1rem 0 0 4rem;
+}
