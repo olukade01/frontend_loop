@@ -1,0 +1,109 @@
+:root {
+  --bg: #2a282a;
+  --container1: #fbea48;
+  --grey: #9f9f9f;
+  --placeholder: #6b696c;
+}
+html,
+body {
+  margin: 0;
+  padding: 0;
+  background-color: var(--bg);
+  font-family: "roboto", sans-serif;
+}
+* {
+  box-sizing: border-box;
+}
+.container1 {
+  width: 27rem;
+  background-color: var(--container1);
+  margin: 5rem auto 0;
+  padding: 2.5rem 3.3rem 1.5rem;
+}
+.container2 {
+  width: 26.7rem;
+  background-color: white;
+  margin-top: 2rem;
+  padding: 0 2.3rem 2rem;
+  box-shadow: -3px 8px 10px 5px rgba(0, 0, 0, 0.15);
+}
+.header {
+  display: flex;
+  justify-content: space-between;
+}
+p {
+  font-size: 1.1rem;
+}
+.close-img {
+  filter: invert(0.39);
+}
+.close-img:hover {
+  filter: invert(0);
+  cursor: pointer;
+}
+.avatar {
+  width: 3.5rem;
+  border-radius: 50%;
+  margin-top: -2rem;
+}
+form {
+  display: flex;
+  flex-direction: column;
+  font-size: 0.7rem;
+}
+.name {
+  display: flex;
+  flex-direction: column;
+}
+.names {
+  display: flex;
+}
+.name-input {
+  width: 11rem;
+}
+label {
+  color: var(--grey);
+  font-weight: 900;
+  margin: 1.5rem 0 0.4rem;
+}
+input {
+  border: none;
+  border-bottom: 1px solid #dad8da;
+  padding-bottom: 0.3rem;
+}
+input:focus {
+  outline: none;
+}
+textarea {
+  border: none;
+  border-bottom: 1px solid #dad8da;
+  resize: vertical;
+}
+textarea:focus {
+  outline: none;
+}
+button {
+  padding-left: 2rem;
+  background-color: transparent;
+  border: none;
+  font-size: 1rem;
+  color: #584e13;
+}
+button:focus {
+  outline: none;
+}
+button:hover {
+  cursor: pointer;
+  color: black;
+}
+.bottom {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 1.3rem;
+}
+textarea {
+  font-family: "roboto", sans-serif;
+}
+::placeholder {
+  padding-right: -100rem;
+}
