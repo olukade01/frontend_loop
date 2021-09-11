@@ -1,0 +1,127 @@
+:root {
+  --bg: #4b4b73;
+  --top: #363548;
+  --center: #222022;
+  --grey: #a49f9e;
+  --hover-top: #2c2c39;
+}
+html,
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "roboto", sans-serif;
+  background-color: var(--bg);
+}
+* {
+  box-sizing: border-box;
+}
+.icons {
+  margin-top: 7rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.icon {
+  width: 5.5rem;
+  height: 4.5rem;
+  background-color: var(--top);
+  display: flex;
+  justify-content: center;
+}
+.three {
+  width: 7.5rem;
+  height: 6rem;
+  background-color: var(--center);
+  box-shadow: 0 0 5px 5px rgba(0, 0, 0, 0.2);
+}
+.img-three {
+  width: 2.5rem;
+  filter: invert(0);
+}
+.one {
+  border-right: 2px solid #646381;
+}
+img {
+  width: 1.8rem;
+  filter: invert(0.33);
+}
+.two {
+  width: 5rem;
+}
+.container {
+  margin: 1.3rem auto 0;
+  max-width: 21.5rem;
+  height: 27.7rem;
+  background-color: white;
+  border-radius: 6px;
+}
+.foods {
+  background: #bbbec3 url("./img/food.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-blend-mode: multiply;
+  width: 21.5rem;
+  height: 10.7rem;
+  border-radius: 5px 5px 0 0;
+  padding: 4.5rem 1.5rem;
+}
+h1 {
+  color: white;
+}
+.location-icon {
+  filter: invert(0);
+  width: 1.3rem;
+  margin-right: 0.3rem;
+}
+.location {
+  margin-top: -2rem;
+  display: flex;
+  align-items: center;
+}
+.madrid {
+  color: white;
+  font-size: 0.9rem;
+  font-weight: 500;
+  margin-top: 1.3rem;
+}
+.food {
+  padding: 0.5rem 1.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 2px solid #dddbdd;
+  height: 4.25rem;
+  cursor: pointer;
+}
+.content {
+  color: var(--grey);
+  font-weight: 600;
+}
+.burger {
+  border: none;
+}
+.one:hover {
+  background-color: var(--hover-top);
+  cursor: pointer;
+}
+.two:hover {
+  background-color: var(--hover-top);
+  cursor: pointer;
+}
+.five:hover {
+  background-color: var(--hover-top);
+  cursor: pointer;
+}
+.number {
+  width: 13rem;
+  height: 3rem;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.number:hover {
+  color: black;
+  font-size: 1.5rem;
+  transition: 0.2s;
+}
