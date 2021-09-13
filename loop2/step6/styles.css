@@ -1,0 +1,110 @@
+:root {
+  --bg: #78accd;
+  --brown: #df7049;
+  --purple: #ae5989;
+  --light-grey: #e2e1e2;
+  --grey: #828f9b;
+}
+html,
+body {
+  margin: 0;
+  padding: 0;
+  background-color: var(--bg);
+  font-family: "roboto", sans-serif;
+}
+.container {
+  background: white;
+  max-width: 25rem;
+  margin: 10rem auto;
+}
+.date {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.3rem 1.3rem;
+  border-bottom: 1px solid #e2e2e2;
+  color: var(--grey);
+  font-weight: 500;
+}
+
+.day {
+  color: #808c97;
+  font-weight: 900;
+  font-size: 0.85rem;
+}
+.previous {
+  color: var(--light-grey);
+  font-weight: 500;
+}
+.calendar {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  border-bottom: 1px solid #e2e2e2;
+  place-content: center;
+  place-items: center;
+  padding: 0.5rem 1.5rem 1.2rem;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 4.4rem;
+  padding: 0 1.3rem;
+  font-size: 0.86rem;
+  font-weight: 500;
+}
+
+.circle {
+  width: 1.85rem;
+  height: 1.85rem;
+  border: 2px solid var(--brown);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+img {
+  width: 0.9rem;
+}
+.purple {
+  border: 2px solid var(--purple);
+  position: relative;
+}
+.purple::after {
+  content: "5";
+  position: absolute;
+  width: 1rem;
+  height: 1rem;
+  background: var(--purple);
+  border-radius: 50%;
+  left: 1.3rem;
+  bottom: 1.3rem;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 0.7rem;
+  font-weight: 500;
+}
+
+.orange {
+  border: 2px solid var(--brown);
+  position: relative;
+}
+
+.orange::after {
+  content: "6";
+  background: var(--brown);
+}
+.seven {
+  background: var(--brown);
+  color: white;
+}
+.p {
+  font-size: 15px;
+  margin: 0.6rem;
+}
+sup {
+  font-size: 0.5rem;
+  font-weight: 900;
+}
