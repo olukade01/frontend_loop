@@ -1,0 +1,124 @@
+:root {
+  --bg: #f0f4f9;
+  --blue: #4a7cf4;
+  --grey: #9f9fa1;
+  --white-bg: #f7f5f7;
+  --border: #e0dee0;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "roboto", sans-serif;
+  background: var(--bg);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.frame {
+  margin: 3rem auto;
+  width: 28rem;
+  height: 46.5rem;
+  background: var(--white-bg);
+  border: 1rem solid black;
+  border-radius: 3rem;
+}
+.clip-path {
+  width: 26.1rem;
+  height: 37rem;
+  clip-path: polygon(0 0, 100% 0, 100% 51%, 0 11%);
+  background: var(--blue);
+  border-radius: 2rem 2rem 0 0;
+  position: relative;
+  margin-top: -0.05rem;
+  margin-left: -0.05rem;
+  display: flex;
+  justify-content: center;
+}
+.clip-path:before {
+  content: "";
+  position: absolute;
+  width: 15rem;
+  height: 1.8rem;
+  background: black;
+  border-radius: 0 0 0.5rem 0.5rem;
+  right: 5.55rem;
+}
+h3 {
+  margin-top: 3rem;
+  color: white;
+  font-size: 1.33rem;
+}
+.payment {
+  margin-top: -13.5rem;
+  padding: 0 1.3rem;
+}
+.first {
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+.card {
+  position: absolute;
+  width: 24rem;
+  margin: -31.5rem 0.9rem 0;
+}
+.toggle {
+  width: 3.5rem;
+  height: 2.3rem;
+  position: relative;
+  visibility: hidden;
+  cursor: pointer;
+}
+.toggle:before {
+  content: "";
+  position: absolute;
+  width: 3.5rem;
+  height: 2rem;
+  background: white;
+  visibility: visible;
+  border: 2.3px solid var(--border);
+  border-radius: 50px;
+}
+.toggle::after {
+  content: "";
+  position: absolute;
+  width: 1.8rem;
+  height: 1.8rem;
+  background: white;
+  visibility: visible;
+  border: 2.3px solid var(--border);
+  border-radius: 50%;
+  margin-top: 0.1rem;
+  left: 0;
+  transition: ease-in-out 0.2s;
+}
+
+.toggle:checked::after {
+  left: calc(100% - 2rem);
+  border: none;
+}
+
+.toggle:checked::before {
+  background-color: blue;
+  border: none;
+}
+
+h2 {
+  margin: 0;
+  font-size: 1.3rem;
+}
+img {
+  margin-right: 1.2rem;
+}
+p {
+  margin: 0;
+  color: var(--grey);
+}
+.text {
+  font-weight: 500;
+}
