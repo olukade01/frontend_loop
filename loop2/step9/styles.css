@@ -1,0 +1,152 @@
+:root {
+  --bg: #3f72f7;
+  --grey: #a1a0a0;
+  --stroke-grey: #a7c3f8;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #3f72f7;
+  font-family: "roboto", sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.container {
+  background-color: white;
+  width: 30.5rem;
+  margin: 5rem auto;
+  padding: 1rem 2rem;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 0.5rem;
+}
+
+.map-background {
+  background: rgba(90, 135, 251, 0.8) url("./img/map.png");
+  background-size: cover;
+  background-position: center;
+  width: 32rem;
+  height: 9.75rem;
+  margin-left: -2.75rem;
+  margin-bottom: 2.5rem;
+  border-radius: 5px;
+  background-blend-mode: multiply;
+  padding: 1.8rem 2.8rem 0;
+  color: white;
+  font-weight: 900;
+  font-size: 1.1rem;
+  box-shadow: 0 1.5rem 20px -7px rgba(0, 0, 0, 0.25);
+}
+
+h4 {
+  font-weight: 500;
+}
+
+.header-img {
+  filter: invert(0.6);
+}
+
+.header-img:hover {
+  cursor: pointer;
+  filter: invert(0);
+}
+
+.car {
+  width: 1.2rem;
+  margin-left: 9.9rem;
+  margin-bottom: 0;
+}
+
+.city {
+  margin: -1.5rem 0 -1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.lenght {
+  display: flex;
+  align-items: center;
+}
+
+.dot {
+  width: 0.7rem;
+  height: 0.7rem;
+  background: white;
+  border-radius: 50%;
+}
+
+.stroke {
+  height: 0.19rem;
+  width: 4rem;
+  background: white;
+}
+
+.long {
+  width: 10rem;
+  background: var(--stroke-grey);
+}
+
+.distance {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  font-size: 1rem;
+}
+
+.open {
+  background: blue;
+  width: 8.7rem;
+  height: 2.7rem;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 0.7rem;
+  margin-top: 0.8rem;
+  margin-left: 18.5rem;
+  cursor: pointer;
+}
+
+.location {
+  width: 1.2rem;
+}
+
+.direction {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  grid-column-gap: 2rem;
+  align-items: center;
+  font-weight: 500;
+}
+
+.km {
+  margin-bottom: 0.2rem;
+  color: var(--grey);
+  font-size: 0.9rem;
+}
+.p {
+  margin-top: 0.2rem;
+}
+
+.street-view {
+  background: url("./img/streetview.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 4.5rem;
+  margin: 1rem -2rem 1rem -0.7rem;
+  border-radius: 5px 0 0 5px;
+  display: flex;
+  align-items: center;
+  padding-left: 0.7rem;
+}
+.directions {
+  font-weight: 500;
+}
