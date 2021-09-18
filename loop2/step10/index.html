@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Loop 2 - Challenge</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto:200,300,400,500,700"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/main.css" />
+  </head>
+  <body>
+    <!--
+    It's more about small details this time and if you haven't yet tried splitting
+    your css into separate component files - that's the perfect time to try.
+    (Use @import in css to achieve that)
+
+    The other gimmick we introduce here is about using font icons instead of inserting images into our code.
+    The easiest out-of-the-box method is to use Google Material Icons,
+    so read about the implementation before you start:
+    https://material.io/icons/
+  -->
+
+    <div class="header">
+      <nav class="nav-bar">
+        <div class="linkdin">
+          <img class="linkdin-logo" src="./img/logo.png" alt="linkdin logo" />
+        </div>
+        <div class="search-line">
+          <div class="search-bar">
+            <input class="search-input" type="text" placeholder="search" />
+            <img class="search-icon" src="./img/search-24px.svg" alt="" />
+          </div>
+        </div>
+        <!-- <div class="nav-links"> -->
+        <p class="nav-link">Home</p>
+        <p class="nav-link">Profile</p>
+        <p class="nav-link">Connections</p>
+        <p class="nav-link">Interest</p>
+        <p class="nav-link premium">Try Premium</p>
+        <!-- </div> -->
+        <div class="icons">
+          <div class="message">
+            <img
+              class="icon-img message-image"
+              src="./img/comment-24px.svg"
+              alt=""
+            />
+          </div>
+          <div class="notification">
+            <img class="icon-img" src="./img/notifications-24px.svg" alt="" />
+          </div>
+          <div class="profile">
+            <img class="icon-img" src="./img/person_add-24px.svg" alt="" />
+          </div>
+        </div>
+        <img class="avatar" src="./img/avatar.jpg" alt="" class="profile-pic" />
+      </nav>
+      <div class="top">
+        <p class="top-p posts">Posts</p>
+        <p class="top-p">Background</p>
+        <p class="top-p">Recommendations</p>
+        <p class="top-p">Following</p>
+      </div>
+    </div>
+
+    <div class="main">
+      <div class="left">
+        <img class="avatar-bill" src="./img/bill-gates-avatar.png" alt="" />
+        <h2>Bill Gates</h2>
+        <p>Microsoft Founder</p>
+        <p class="grey-p">Greater Seattle Area</p>
+        <button class="follow-btn">Follow</button>
+        <button class="connect-btn">
+          <p>Connect</p>
+          <img src="./img/arrow-down-s-line.svg" alt="" />
+        </button>
+        <div class="network">
+          <div class="gates connect">
+            <h3>200</h3>
+            <p class="grey-p followers">connecti...</p>
+          </div>
+          <div class="gates">
+            <h3>1.9M</h3>
+            <p class="grey-p followers">followers</p>
+          </div>
+        </div>
+        <div class="links">
+          <div class="link">
+            <img class="link-logo" src="./img/link-24px.svg" alt="" />
+            <p class="grey">linkedin.com/in/billgat...</p>
+          </div>
+          <div class="link">
+            <img class="link-logo" src="./img/language-24px.svg" alt="" />
+            <p class="grey">billgates.com</p>
+          </div>
+        </div>
+        <div class="link export">
+          <img class="link-logo" src="./img/file_upload-24px.svg" alt="" />
+          <p class="grey">Export page as PDF</p>
+        </div>
+      </div>
+
+      <div class="center">
+        <div class="container1">
+          <div class="head">
+            <h3>POSTS</h3>
+            <div class="head-arrow">
+              <div class="arrow-circle">
+                <img
+                  class="arrow-img"
+                  src="./img/keyboard_arrow_left-24px.svg"
+                  alt=""
+                />
+              </div>
+              <div class="arrow-circle">
+                <img
+                  class="arrow-img"
+                  src="./img/keyboard_arrow_right-24px.svg"
+                  alt=""
+                />
+              </div>
+            </div>
+          </div>
+          <div class="article">
+            <div class="post pointer">
+              <div class="underline">
+                <img class="post-img" src="./img/article1.jpg" alt="" />
+                <p class="post-p">
+                  3 Myths That Confuse <br />
+                  Top-Managers
+                </p>
+              </div>
+              <p class="grey-p">February 19, 2016</p>
+            </div>
+            <div class="post pointer">
+              <div class="underline">
+                <img class="post-img" src="./img/article2.jpg" alt="" />
+                <p class="post-p">
+                  How much do we spend <br />
+                  on hot drinks
+                </p>
+              </div>
+              <p class="grey-p">February 19, 2016</p>
+            </div>
+            <div class="post pointer">
+              <div class="underline">
+                <img class="post-img" src="./img/article3.jpg" alt="" />
+                <p class="post-p">
+                  Good news you might <br />
+                  have noticed
+                </p>
+              </div>
+              <p class="grey-p">February 19, 2016</p>
+            </div>
+          </div>
+        </div>
+        <div class="container1">
+          <div class="head">
+            <h3>BACKGROUND</h3>
+          </div>
+          <div class="container-content">
+            <div class="work">
+              <img class="work-icon" src="./img/assignment-24px.svg" alt="" />
+              <p class="content-head">Summary</p>
+            </div>
+            <p class="content-p">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam, quis nostrud exercitation ullamco laboris
+              nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+              reprehenderit in voluptate velit esse cillum dolore eu fugiat
+              nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+              sunt in culpa qui officia deserunt mollit anim id est laborum.
+            </p>
+            <div class="work">
+              <img class="work-icon" src="./img/work-24px.svg" alt="" />
+              <p class="content-head">Experience</p>
+            </div>
+            <div class="content-p">
+              <div class="stroke">
+                <div class="dot"></div>
+                <div class="slash"></div>
+                <div class="dot"></div>
+              </div>
+              <div class="experience">
+                <h5>2000 - PRESENT</h5>
+                <p>Co-founder, Chairman</p>
+                <p class="blue-p">Microsoft</p>
+                <h5>1992 - 1999</h5>
+                <p>Senior Developer</p>
+                <p class="blue-p">Youtube</p>
+              </div>
+              <div class="right-logos">
+                <img class="right-logo" src="./img/logo-microsoft.png" alt="" />
+                <img
+                  class="right-logo youtube"
+                  src="./img/logo-youtube.png"
+                  alt=""
+                />
+              </div>
+            </div>
+            <div class="work">
+              <img
+                class="work-icon"
+                src="./img/account_balance-24px.svg"
+                alt=""
+              />
+              <p class="content-head">Education</p>
+            </div>
+            <div class="content-p">
+              <div class="stroke">
+                <div class="dot"></div>
+                <div class="slash"></div>
+                <div class="dot"></div>
+              </div>
+              <div class="experience">
+                <h5>1973 - 1975</h5>
+                <p>Harvard University</p>
+                <p class="blue-p">BS Computer Science</p>
+                <h5>1960 - 1973</h5>
+                <p>Lakeside School, Seattle</p>
+              </div>
+            </div>
+            <div class="work">
+              <img class="work-icon" src="./img/lightbulb-24px.svg" alt="" />
+              <p class="content-head">Skills</p>
+            </div>
+            <div class="content-p skills">
+              <div class="figure">74</div>
+              <p>Social Media Marketing</p>
+              <div class="pictures">
+                <img class="avatar pic" src="./img/avatar.jpg" alt="" />
+                <img class="avatar pic" src="./img/avatar2.jpg" alt="" />
+                <img class="avatar pic" src="./img/avatar3.jpg" alt="" />
+                <div class="figure figpic pic">71+</div>
+              </div>
+            </div>
+            <div class="content-p skills">
+              <div class="figure">67</div>
+              <p>Web Development</p>
+              <div class="pictures">
+                <img class="avatar pic" src="./img/avatar2.jpg" alt="" />
+                <img class="avatar pic" src="./img/avatar3.jpg" alt="" />
+                <img class="avatar pic" src="./img/avatar.jpg" alt="" />
+                <div class="figure figpic pic">17+</div>
+              </div>
+            </div>
+            <div class="work">
+              <img class="work-icon" src="./img/grade-24px.svg" alt="" />
+              <p class="content-head">Interests</p>
+            </div>
+            <div class="content-p">
+              <div class="interests">
+                <p class="interest">Wireless Industry</p>
+                <p class="interest">Photography</p>
+                <p class="interest">Web design</p>
+                <p class="interest">Technology</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="container1">
+          <div class="head">
+            <h3>RECOMENDATIONS</h3>
+            <div class="head-arrow">
+              <div class="arrow-circle">
+                <img
+                  class="arrow-img"
+                  src="./img/keyboard_arrow_left-24px.svg"
+                  alt=""
+                />
+              </div>
+              <div class="arrow-circle">
+                <img
+                  class="arrow-img"
+                  src="./img/keyboard_arrow_right-24px.svg"
+                  alt=""
+                />
+              </div>
+            </div>
+          </div>
+          <div class="article">
+            <div class="post">
+              <p class="lorem">
+                Lorem ipsum dolor <br />
+                sit amet, <br />
+                consectetur <br />
+                adipisicing elit, sed <br />
+                do eiusmod tempor <br />
+                incididunt ut labore <br />
+                et dolore magna <br />
+                aliqua.
+              </p>
+              <div class="people">
+                <img class="avatar one" src="./img/avatar.jpg" alt="" />
+                <div class="google">
+                  <p class="names">Steve Jobs</p>
+                  <p class="grey-p">Apple</p>
+                </div>
+              </div>
+            </div>
+            <div class="post">
+              <p class="lorem">
+                Lorem ipsum dolor <br />
+                sit amet, <br />
+                consectetur <br />
+                adipisicing elit, sed <br />
+                do eiusmod tempor <br />
+                incididunt ut labore <br />
+                et dolore magna <br />
+                aliqua.
+              </p>
+              <div class="people">
+                <img class="avatar one" src="./img/avatar2.jpg" alt="" />
+                <div class="google">
+                  <p class="names">Mark Zuckerberg</p>
+                  <p class="grey-p">Facebook</p>
+                </div>
+              </div>
+            </div>
+            <div class="post">
+              <p class="lorem">
+                Lorem ipsum dolor <br />
+                sit amet, <br />
+                consectetur <br />
+                adipisicing elit, sed <br />
+                do eiusmod tempor <br />
+                incididunt ut labore <br />
+                et dolore magna <br />
+                aliqua.
+              </p>
+              <div class="people">
+                <img class="avatar one" src="./img/avatar3.jpg" alt="" />
+                <div class="google">
+                  <p class="names">Jeffrey Bezos</p>
+                  <p class="grey-p">Amazon</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="container1">
+          <div class="head">
+            <h3>FOLLOWING</h3>
+          </div>
+          <div class="article">
+            <div class="post">
+              <div class="logos">
+                <img class="right-logo" src="./img/logo-microsoft.png" alt="" />
+              </div>
+              <p class="logo-p">Microsoft</p>
+              <div class="people flw">
+                <div class="arrow-circle plus">
+                  +
+                  <!-- <img class="arrow-img" src="./img/add-24px.svg" alt=""> -->
+                </div>
+                <a href="#">Follow</a>
+              </div>
+            </div>
+            <div class="post">
+              <div class="logos">
+                <img
+                  class="right-logo amazon-logo"
+                  src="./img/logo-amazon.jpg"
+                  alt=""
+                />
+              </div>
+              <p class="logo-p">Amazon</p>
+              <div class="people flw">
+                <div class="arrow-circle plus">
+                  +
+                  <!-- <img class="arrow-img" src="./img/add-24px.svg" alt=""> -->
+                </div>
+                <a href="#">Follow</a>
+              </div>
+            </div>
+            <div class="post">
+              <div class="logos">
+                <img class="right-logo" src="./img/logo-microsoft.png" alt="" />
+              </div>
+              <p class="logo-p">Microsoft</p>
+              <div class="people flw">
+                <div class="arrow-circle plus">
+                  +
+                  <!-- <img class="arrow-img" src="./img/add-24px.svg" alt=""> -->
+                </div>
+                <a href="#">Follow</a>
+              </div>
+            </div>
+            <div class="post">
+              <div class="logos">
+                <img
+                  class="right-logo amazon-logo"
+                  src="./img/logo-amazon.jpg"
+                  alt=""
+                />
+              </div>
+              <p class="logo-p">Amazon</p>
+              <div class="people flw">
+                <div class="arrow-circle plus">
+                  +
+                  <!-- <img class="arrow-img" src="./img/add-24px.svg" alt=""> -->
+                </div>
+                <a href="#">Follow</a>
+              </div>
+            </div>
+          </div>
+          <input class="button" type="button" value="See all (20)" />
+        </div>
+      </div>
+
+      <div class="right">
+        <p>PEOPLE ALSO VIEWED</p>
+        <div class="people">
+          <img class="avatar one" src="./img/avatar.jpg" alt="" />
+          <div class="google">
+            <p class="name-p">Sergey Brin</p>
+            <p class="grey-p">Google</p>
+          </div>
+        </div>
+        <div class="people">
+          <img class="avatar one" src="./img/avatar2.jpg" alt="" />
+          <div class="google">
+            <p class="name-p">Jeffrey Bezos</p>
+            <p class="grey-p">Amazon</p>
+          </div>
+        </div>
+        <div class="people last">
+          <img class="avatar one" src="./img/avatar3.jpg" alt="" />
+          <div class="google">
+            <p class="name-p">Steve Jobs</p>
+            <p class="grey-p">Apple</p>
+          </div>
+        </div>
+        <p>MORE INFLUENCERS</p>
+        <div class="influencers">
+          <div class="steve">
+            <img
+              class="arrow"
+              src="./img/keyboard_arrow_left-24px.svg"
+              alt=""
+            />
+            <img class="avatar two" src="./img/avatar3.jpg" alt="" />
+            <img
+              class="arrow"
+              src="./img/keyboard_arrow_right-24px.svg"
+              alt=""
+            />
+          </div>
+          <h2>Steve Jobs</h2>
+          <p class="grey">Apple</p>
+        </div>
+      </div>
+    </div>
+    <footer>
+      <p>LinkedIn Corporation &copy 2014</p>
+    </footer>
+  </body>
+</html>
